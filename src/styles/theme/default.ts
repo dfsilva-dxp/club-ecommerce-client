@@ -1,25 +1,12 @@
 const theme = {
-  grid: {
-    container: {
-      sm: "33.75rem",
-      md: "45rem",
-      lg: "60rem",
-      xlg: "71.25rem",
-      xxlg: "82.5rem"
-    }
-  },
-  border: {
-    radius: "0.25rem",
-    outlineOffiset: "0.125rem"
-  },
-
   font: {
     family:
-      "Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Poppins, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     weight: {
+      thin: 100,
       light: 300,
       regular: 400,
-      medium: 500,
+      semibold: 600,
       bold: 700
     },
     sizes: {
@@ -28,7 +15,8 @@ const theme = {
       medium: "1rem", // 16px
       large: "1.125rem", // 18px
       xlarge: "1.25rem", // 20px
-      xxlarge: "1.75rem" // 28px
+      xxlarge: "1.5rem", // 24px
+      xxxlarge: "1.75rem" // 28px
     }
   },
 
@@ -45,14 +33,14 @@ const theme = {
   },
 
   colors: {
-    background: "#121214",
+    background: "#c7cfd9",
     elements: "#202024",
-    divider: "#323238",
+    divider: "#aab3c0",
     placeholder: "#7C7C8A",
     label: "#8D8D99",
-    text: "#C4C4CC",
-    title: "#E1E1E6",
+    text: "#040506",
     white: "#FFFFFF",
+    light: "#f2f3f5",
     red: "#F16165",
     green: "#00B37E"
   }
