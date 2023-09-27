@@ -33,7 +33,7 @@ const theme = {
   },
 
   colors: {
-    background: "#c7cfd9",
+    background: "#F6F5FC",
     elements: "#202024",
     divider: "#aab3c0",
     placeholder: "#7C7C8A",
