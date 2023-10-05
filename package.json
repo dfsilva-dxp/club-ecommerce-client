@@ -63,6 +63,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^14.0.1",
+    "miragejs": "^0.1.47",
     "plop": "^4.0.0",
     "prettier": "^3.0.3",
     "ts-jest": "^29.0.5",
