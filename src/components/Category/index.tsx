@@ -1,28 +1,38 @@
 import { Link } from "react-router-dom";
+
 import * as S from "./styles";
 
-export interface ICategoryProps {
+export interface ICategory {
+  id: string;
+  name: "hat" | "shoes" | "jackets" | "women" | "men" | "kids";
+  displayName: string;
   imageUrl: string;
+}
+
+export interface ICategoryProps {
   imageAlt?: string;
-  title: string;
   redirectTo: string;
-  gridArea: "hat" | "shoes" | "jacket" | "female" | "male";
+  gridArea: "hat" | "shoes" | "jackets" | "women" | "men" | "kids";
+  category: ICategory;
 }
 
 const Category = ({
-  imageUrl,
   imageAlt,
-  title,
   redirectTo,
-  gridArea
+  gridArea,
+  category
 }: ICategoryProps) => {
   return (
     <S.CategoryContent gridArea={gridArea}>
-      <S.CategoryImage src={imageUrl} alt={imageAlt} title={imageAlt} />
+      <S.CategoryImage
+        src={category.imageUrl}
+        alt={imageAlt}
+        title={imageAlt}
+      />
 
       <S.CategoryBody>
         <Link to={redirectTo}>
-          <S.CategoryTitle>{title}</S.CategoryTitle>
+          <S.CategoryTitle>{category.displayName}</S.CategoryTitle>
         </Link>
       </S.CategoryBody>
     </S.CategoryContent>

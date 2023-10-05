@@ -71,7 +71,7 @@ export const CategoryBody = styled.figcaption`
   `}
 `;
 
-export const CategoryTitle = styled.h3`
+export const CategoryTitle = styled.h4`
   ${({ theme }) => css`
     letter-spacing: 1px;
     text-transform: uppercase;
